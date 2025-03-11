@@ -52,17 +52,17 @@ p{
     font-size: 30px;
     margin: 5px;
 }
-.temp,.cityName{
+.temperature,.cityName{
     font-size: 50px;
     color: hsla(65, 22%, 80%, 0.827);
     font-weight: bold;
 }
-.humidity{
+.humidityDisp{
     font-weight: bold;
     margin-bottom: 20px;
     color: hsla(0, 0%, 0%, 0.778);
 }
-.description{
+.descriptions{
     font-size: 25px;
     font-style: italic;
     font-weight:bold;

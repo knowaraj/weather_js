@@ -25,6 +25,22 @@ async function weatherDAta(cityName) {
 }
 function displayWeather(data){
     
+    const {
+        name: city,
+        main: {temp,humidity},
+        weather:[{description}]
+    }=data;
+
+    maindiv.textContent="";
+    maindiv.display="flex";
+
+    const cityName = document.createElement("h1");
+    const temprature = document.createElement("p");
+    const humidityDisp = document.createElement("p");
+    const descriptions = document.createElement("p");
+
+    
+
 }
 function displayError(message){
     const errorMsg = document.createElement("p");
