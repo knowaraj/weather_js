@@ -16,9 +16,15 @@ action.addEventListener("submit",async event =>{
 async function weatherDAta(cityName) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
 
+    const response = await fetch(apiUrl);
+
+    // console.log(response);
+
+    return await response.json();
+
 }
 function displayWeather(data){
-
+    
 }
 function displayError(message){
     const errorMsg = document.createElement("p");
