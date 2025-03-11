@@ -33,7 +33,7 @@ button:hover{
 }
 
 .maindiv{
-    background:linear-gradient(90deg,rgb(182, 38, 182),rgb(112, 99, 210));
+    background:linear-gradient(45deg,rgb(182, 38, 182),rgb(112, 99, 210));
     padding: 40px;
     box-shadow: 3px 3px 5px black;
     min-width: 400px;

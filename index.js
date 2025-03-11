@@ -39,7 +39,23 @@ function displayWeather(data){
     const humidityDisp = document.createElement("p");
     const descriptions = document.createElement("p");
 
+    cityName.textContent = city;
+    cityName.classList.add("cityName");
+
+    temprature.textContent = `${(temp-273.5).toFixed(1)}°C`;
+    temprature.classList.add("temperature");
+
+    humidityDisp.textContent = `Humidity = ${humidity}%`;
+    humidityDisp.classList.add("humidityDisp");
+
+    descriptions.textContent = description;
+    descriptions.classList.add("descriptions");
+
     
+    maindiv.appendChild(cityName);
+    maindiv.appendChild(temprature);
+    maindiv.appendChild(humidityDisp);
+    maindiv.appendChild(descriptions);
 
 }
 function displayError(message){
